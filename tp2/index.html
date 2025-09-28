@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Diri - Bintang Prajudha</title>
+  </head>
+  <body>
+    <!-- Div digunakan untuk membungkus seluruh konten utama-->
+    <div id="main-container">
+      <!-- Header section dengan informasi dasar profil -->
+      <div id="header">
+        <h1>Profile Pribadi</h1>
+        <!-- Img tag digunakan untuk menampilkan foto profil sebagai representasi visual dari diri -->
+        <img src="gambar.jpg" alt="Foto Profil" width="260"/>
+        <!-- video untuk menampilkan vidio -->
+        <video width="400" height="300" controls>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"/>
+        </video>
+        <!-- h2 untuk menampilkan judul -->
+        <h2>Bintang Prajudha</h2>
+        <p>Mahasiswa Teknik Informatika</p>
+      </div>
+
+        <!-- Section Tentang saya -->
+      <div id="about">
+        <h3>Tentang Saya</h3>
+        <p>
+          Saya adalah mahasiswa Teknik Informatika yang berminat dalam
+          pengembangan web dan teknologi. Memiliki minat besar dalam
+          programming, khususnya dalam pengembangan aplikasi web modern.
+        </p>
+
+
+      <!-- Section Pendidikan menggunakan table untuk menampilkan riwayat pendidikan -->
+      <div id="education">
+        <h3>Riwayat Pendidikan</h3>
+        <!-- Table digunakan untuk menampilkan tabel pendidikan -->
+        <table border="1" cellpadding="10" cellspacing="0">
+          <!-- th (table header) digunakan untuk membuat header kolom tabel -->
+          <tr>
+            <th>Tahun</th>
+            <th>Institusi</th>
+            <th>Jurusan/Program</th>
+            <th>Status</th>
+          </tr>
+          <!-- tr (table row) digunakan untuk membuat baris dalam tabel -->
+          <!-- td (table data) digunakan untuk membuat sel data dalam tabel -->
+          <tr>
+            <td>2023 - Sekarang</td>
+            <td>Universitas Telkom</td>
+            <td>Teknologi Informasi</td>
+            <td>Aktif</td>
+          </tr>
+          <tr>
+            <td>2020 - 2023</td>
+            <td>SMA Negeri 1 Ngawi</td>
+            <td>IPA</td>
+            <td>Lulus</td>
+          </tr>
+          <tr>
+            <td>2017 - 2020</td>
+            <td>SMP Negeri 2 Ngawi</td>
+            <td>-</td>
+            <td>Lulus</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Section Keahlian, minat -->
+      <div id="skills">
+        <h3>Keahlian & Minat</h3>
+        <!-- ul untuk unordered list -->
+        <ul>
+            <!-- li untuk anaknya ul -->
+          <li>Programming: HTML, assembly</li>
+          <li>Database: Excel</li>
+          <li>Framework: no framework</li>
+        </ul>
+      </div>
+
+
+      <!-- Section Contact -->
+      <div id="contact">
+        <h3>Hubungi Saya</h3>
+
+        <!-- Form digunakan untuk membuat formulir untuk mengirim pesan -->
+        <form action="#" method="post">
+          <div>
+            <!-- label untuk tulisan sebelum input -->
+            <label for="nama">Nama Lengkap:</label><br />
+            <!-- Input digunakan untuk membuat field input text untuk nama -->
+            <input type="text" id="nama" name="nama" required />
+          </div>
+          <br />
+
+          <div>
+            <label for="email">Email:</label><br />
+            <!-- Input type email digunakan untuk validasi format email -->
+            <input type="email" id="email" name="email" required />
+          </div>
+          <br />
+
+          <div>
+            <label for="pesan">Pesan:</label><br />
+            <!-- Textarea digunakan untuk input text multi-baris untuk pesan yang lebih panjang -->
+            <textarea
+              id="pesan"
+              name="pesan"
+              rows="5"
+              cols="50"
+              placeholder=" Tulis pesan Anda di sini..."
+            ></textarea>
+          </div>
+          <br />
+
+          <div>
+            <label for="kategori">Kategori:</label><br />
+            <!-- Input type radio untuk pilihan kategori -->
+            <input type="radio" id="umum" name="kategori" value="umum" />
+            <label for="umum">Pertanyaan Umum</label><br />
+
+            <input
+              type="radio"
+              id="feedback"
+              name="kategori"
+              value="feedback"
+            />
+            <label for="feedback">Feedback</label>
+          </div>
+          <br />
+
+          <div>
+            <!-- Input type checkbox untuk persetujuan -->
+            <input
+              type="checkbox"
+              id="langganan"
+              name="langganan"
+              value="yes"
+            />
+            <label for="newsletter">Saya ingin berlangganan</label>
+          </div>
+          <br />
+
+          <!-- Button digunakan untuk membuat tombol submit form -->
+          <button type="submit">Kirim Pesan</button>
+          <!-- Button type reset untuk mengosongkan form -->
+          <button type="reset">Reset Form</button>
+        </form>
+      </div>
+
+      <!-- Footer dengan informasi kontak -->
+      <div id="footer">
+        <!-- hr untuk garis horizontal -->
+        <hr />
+        <h4>Informasi Kontak</h4>
+        <p>
+          GitHub:
+          <!-- a untuk link ke dighub -->
+          <a href="https://github.com/bintangprajudha" target="_blank"
+            >github.com/bintangprajudha</a
+          >
+        </p>
+
+        <!-- &copy untuk logo copyrght, small untuk text kecil -->
+        <p><small>&copy; 2025 Bintang Prajudha. Dibuat dengan HTML.</small></p>
+      </div>
+    </div>
+  </body>
+</html>
